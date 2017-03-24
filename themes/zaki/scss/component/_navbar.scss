@@ -1,0 +1,103 @@
+/**
+ * Navbar styling.
+ */
+$mobile:  "screen and (max-width: #{$screen-xs-max})";
+$tablet:  "screen and (min-width: #{$screen-sm-min})";
+$normal:  "screen and (min-width: #{$screen-md-min})";
+$wide:    "screen and (min-width: #{$screen-lg-min})";
+
+body {
+  .navbar{
+    background: transparent;
+    border:0 none;
+    font-family: $font-family-second;
+    button{
+      float:left;
+      margin:18px 20px 0 0;
+    }
+    .navbar-brand{
+      color: red;
+      font-size: 22px;
+      text-transform: uppercase;
+      &:hover{
+        color:#000;
+      }
+    }
+  }
+  .navbar-header{
+    width:100%;
+  }
+  //@media #{$tablet}{
+    .navbar-default .navbar-nav{
+      float:right;
+      text-transform:lowercase;
+      font-size:16px;
+      @media #{$mobile} {
+        float:left;
+      }
+      > li > a {
+        color:red;
+        padding: 15px 7px 0 7px;
+        &:hover,
+        &:focus{
+          color:black;
+        }
+      }
+    } 
+  //}
+  
+  // Fix horizontal scrolling on iOS devices.
+  // http://drupal.org/node/1870076
+  position: relative;
+
+  &.navbar-is-static-top {
+    margin-top: 0;
+  }
+  &.navbar-is-fixed-top {
+    margin-top: ($navbar-height + ($grid-gutter-width / 2));
+  }
+  &.navbar-is-fixed-bottom {
+    padding-bottom: ($navbar-height + ($grid-gutter-width / 2));
+  }
+
+  @media #{$tablet} {
+    margin-top: ($grid-gutter-width / 2);
+  }
+  @media #{$mobile} {
+    &.toolbar-vertical {
+      &.navbar-is-fixed-top,
+      &.navbar-is-fixed-bottom {
+        .toolbar-bar {
+          position: fixed;
+        }
+        header {
+          z-index: 500;
+        }
+      }
+      // Default toolbar fixed height value.
+      // @see core/modules/toolbar/css/toolbar.icons.theme.css@261
+      &.navbar-is-fixed-top header {
+        top: 39px;
+      }
+    }
+  }
+}
+.navbar.container {
+  @media #{$tablet} {
+    max-width: (($container-sm - $grid-gutter-width));
+  }
+  @media #{$normal} {
+    max-width: (($container-md - $grid-gutter-width));
+  }
+  @media #{$wide} {
+    max-width: (($container-lg - $grid-gutter-width));
+  }
+}
+
+.menu a.fa{
+  visibility: hidden;
+}
+
+.menu a.fa:before{
+  visibility: visible;
+}

@@ -1,0 +1,40 @@
+#bootstrap-scripts:
+  #js:
+    #bootstrap/assets/javascripts/bootstrap/affix.js: {}
+    #bootstrap/assets/javascripts/bootstrap/alert.js: {}
+    #bootstrap/assets/javascripts/bootstrap/button.js: {}
+    #bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+    #bootstrap/assets/javascripts/bootstrap/collapse.js: {}
+    #bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
+    #bootstrap/assets/javascripts/bootstrap/modal.js: {}
+    #bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
+    #bootstrap/assets/javascripts/bootstrap/popover.js: {}
+    #bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
+    #bootstrap/assets/javascripts/bootstrap/tab.js: {}
+    #bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/jPushMenu.css: {}
+      css/timeline.css: {}
+  js:       
+    js/imagesloaded.pkgd.min.js: {}
+    js/masonry.pkgd.min.js: {}
+    js/jPushMenu.js: {}
+    js/modernizr.js: {}
+    js/timeline.js: {}
+    js/script.js: {}   
+
+ 
+fonts:
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Changa+One: { type: external }
+      //fonts.googleapis.com/css?family=Lato:300: { type: external }
+  
+      

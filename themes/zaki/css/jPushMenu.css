@@ -1,0 +1,224 @@
+/* General styles for all menus */
+.cbp-spmenu {
+    background: red;
+    position: fixed; 
+    font-family: Changa One;
+}
+
+.cbp-spmenu h3 {
+    color: #FFF;
+    font-size: 1.9em;
+    padding: 12px;
+    margin: 0;
+    font-weight: 300;
+    background: #FFF;
+}
+
+.cbp-spmenu ul{
+  padding:0;
+  margin:0;
+}
+
+.cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+    background: #FFF;
+    text-decoration: line-through;
+    color: #F00; 
+}
+
+.cbp-spmenu a:active {
+    background: #FFF;
+    color: #F00;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+
+.cbp-spmenu-vertical a {
+    border-bottom: 1px dotted #ffff;
+    font-family: Changa One;
+    font-size: 44px;
+    padding: 3px;
+    text-align: center;
+}
+.cbp-spmenu-vertical a:before{
+  font: normal normal normal 22px/1 FontAwesome;
+  margin-right:15px;
+}
+.cbp-spmenu-horizontal {
+    width: 100%;
+    height: 150px;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.cbp-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+    left: -100%;
+}
+
+.cbp-spmenu-right {
+    right: -240px;
+}
+
+.cbp-spmenu-left.menu-open {
+    left: 0px;
+}
+
+
+/* Push classes applied to the body */
+.push-body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.push-body-toright {
+    left: 240px;
+}
+
+.push-body-toleft {
+    left: -240px;
+}
+
+/* Transitions */
+.cbp-spmenu,
+.push-body {
+-webkit-transition: all 700ms cubic-bezier(0.755, 0.050, 0.855, 0.060); 
+   -moz-transition: all 700ms cubic-bezier(0.755, 0.050, 0.855, 0.060); 
+     -o-transition: all 700ms cubic-bezier(0.755, 0.050, 0.855, 0.060); 
+        transition: all 700ms cubic-bezier(0.755, 0.050, 0.855, 0.060); /* easeInQuint */
+}
+
+/*Button*/
+.toggle-menu {
+  width: 22px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border:0 none;
+  background:transparent;
+}
+
+.toggle-menu span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: red;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.toggle-menu span:nth-child(1) {
+  top: 0px;
+}
+
+.toggle-menu span:nth-child(2) {
+  top: 6px;
+}
+
+.toggle-menu span:nth-child(3) {
+  top: 12px;
+}
+
+.toggle-menu.open span:nth-child(1) {
+  top: 6px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.toggle-menu.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.toggle-menu.open span:nth-child(3) {
+  top: 6px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+/* Example media queries */
+/*@media screen and (max-width: 55.1875em) {
+    .cbp-spmenu-horizontal {
+        font-size: 75%;
+        height: 110px;
+    }
+
+    .cbp-spmenu-top {
+        top: -110px;
+    }
+
+    .cbp-spmenu-bottom {
+        bottom: -110px;
+    }
+}
+
+@media screen and (max-height: 26.375em) {
+    .cbp-spmenu-vertical {
+        font-size: 90%;
+        width: 190px;
+    }
+
+    .cbp-spmenu-left,
+    .push-body-toleft {
+        left: -190px;
+    }
+
+    .cbp-spmenu-right {
+        right: -190px;
+    }
+
+    .push-body-toright {
+        left: 190px;
+    }
+}*/

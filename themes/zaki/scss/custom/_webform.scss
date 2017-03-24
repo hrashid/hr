@@ -1,0 +1,18 @@
+.block-webform{
+  padding:50px 0;
+  .form-item{
+    float:left;
+    width:47%;
+  }
+  .form-type-textarea{
+    float:right;
+    .form-textarea{
+      height:182px;
+    }
+  }
+  .form-actions{
+    clear:both;
+    text-align:center;
+    padding:40px 0;
+  }
+}

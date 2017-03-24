@@ -1,0 +1,24 @@
+/**
+ * Photo Set styling.
+ */
+
+$mobile:  "screen and (max-width: #{$screen-xs-max})";
+$tablet:  "screen and (min-width: #{$screen-sm-min})";
+$normal:  "screen and (min-width: #{$screen-md-min})";
+$wide:    "screen and (min-width: #{$screen-lg-min})";
+
+
+
+.page-node-type-photo-set{
+	
+    @media #{$tablet} {
+   
+    }
+    @media #{$normal} {
+   
+    }
+  
+}
+
+
+

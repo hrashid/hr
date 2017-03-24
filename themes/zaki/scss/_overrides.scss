@@ -1,0 +1,99 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/ajax";
+@import "component/field";
+@import "component/file";
+@import "component/filter";
+@import "component/form";
+@import "component/icon";
+@import "component/navbar";
+@import "component/node";
+@import "component/panel";
+@import "component/progress-bar";
+@import "component/table-drag";
+@import "component/tabs";
+//@import "component/buttons";
+@import "component/toolbar";
+
+@import "custom/footer";
+@import "custom/node_homepage";
+@import "custom/node_photo_set";
+@import "custom/node_photo_set_juicebox";
+@import "custom/google_map";
+@import "custom/webform";
+
+
+// jQuery UI style overrides.
+//@import "jquery-ui/autocomplete";
+
+body{
+  font-family: $font-family-base;
+  font-weight:300;
+  background: $body-bg;
+ }
+
+ol, ul {
+  padding-left: 1.5em;
+  .popover &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Page header.
+.page-header {
+  margin-top: 0;
+  border:0 none;
+}
+
+p{
+  margin-bottom:30px;
+}
+p:last-child{
+  margin-bottom:0px;
+}
+
+// Footer.
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5;
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+// Help region.
+.region-help {
+  > .glyphicon {
+    font-size: $font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+
+.help-block, .control-group .help-inline {
+  color: $gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+a{
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+

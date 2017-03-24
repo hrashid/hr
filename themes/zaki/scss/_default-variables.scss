@@ -1,0 +1,24 @@
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+//== Colors
+$primary: #F00;
+
+$body-bg:               #FFF !default;
+
+$link-color:            $primary;
+$link-hover-color:      darken($primary, 15%);
+$link-hover-decoration: underline;
+
+//== Typography
+$font-family-base:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-second:  Changa One, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base:          20px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)); 
+$font-size-small:         ceil(($font-size-base * 0.85));
+
+$font-size-h1:            floor(($font-size-base * 2.6)); 
+$font-size-h2:            floor(($font-size-base * 2.15)); 
+$font-size-h3:            ceil(($font-size-base * 1.7)) ; 
+$font-size-h4:            ceil(($font-size-base * 1.25));
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85));

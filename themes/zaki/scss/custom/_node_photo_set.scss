@@ -1,0 +1,92 @@
+/**
+ * Photo Set styling.
+ */
+
+$mobile:  "screen and (max-width: #{$screen-xs-max})";
+$tablet:  "screen and (min-width: #{$screen-sm-min})";
+$normal:  "screen and (min-width: #{$screen-md-min})";
+$wide:    "screen and (min-width: #{$screen-lg-min})";
+
+body.page-node-type-photo-set.navbar-is-fixed-top,
+body.page-node-type-homepage.navbar-is-fixed-top {
+  margin-top: 0;
+}
+
+body.user-logged-in.page-node-type-homepage.navbar-is-fixed-top,
+body.user-logged-in.page-node-type-photo-set.navbar-is-fixed-top {
+	.region-header{
+    position:relative;
+		.tabs{
+			z-index: 1000;
+			position:absolute;
+      top:135px;
+		}
+	}
+}
+
+.page-node-type-homepage,
+.page-node-type-photo-set{
+	.main-container{
+		margin-top:-70px;
+	}
+	h1,
+	.field--name-field-sub-title{
+    position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		z-index: 1;
+  	font-family: $font-family-second;
+  	color:#FFF;
+  	text-transform: lowercase;
+  	text-shadow: 4px 4px 0px #000;
+    top:140px;
+    text-align: center;
+    width:100%;
+    @media #{$tablet} {
+      top:240px;
+      font-size:30px;
+    }
+    @media #{$normal} {
+      font-size: 62px;
+      top: 400px;
+    }
+  }
+  .field--name-field-sub-title{
+  	top:130px;
+  	font-size:11px;
+  	letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0 #000;
+  	text-transform: uppercase;
+    @media #{$tablet} {
+      top:280px;
+      font-size:14px;
+    }
+    @media #{$normal} {
+      font-size: 18px;
+      top: 475px;
+    }
+  }
+  .field--name-field-lead-image img{
+    width:100%;
+  }
+  .field--name-field-location{
+  	margin-bottom:100px;
+  }
+  .body-field-container{
+  	margin-top:100px;
+  	margin-bottom:100px;
+  	font-size:$font-size-large;
+  	line-height: 38px;
+  }
+  .block-views{
+  	margin-top:80px;
+  	h2{
+  		text-align: center;
+  		font-family: $font-family-second;
+  	}
+  }
+}
+
+
+
