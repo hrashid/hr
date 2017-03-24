@@ -761,9 +761,9 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'webdata',
-  'username' => 'drupal8',
-  'password' => 'Shukria2014',
+  'database' => 'zzzz',
+  'username' => 'zzz',
+  'password' => 'zzz',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
