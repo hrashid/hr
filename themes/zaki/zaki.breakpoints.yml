@@ -1,0 +1,18 @@
+zaki.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+zaki.tablet:
+  label: table
+  mediaQuery: '(min-width: 601px)'
+  weight: 1
+  multipliers:
+    - 1x
+bartik.desktop:
+  label: desktop
+  mediaQuery: '(min-width: 1025px)'
+  weight: 2
+  multipliers:
+    - 1x
