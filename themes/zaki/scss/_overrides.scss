@@ -68,6 +68,11 @@ p:last-child,
   margin-bottom: 0;
 }
 
+.larger{
+  font-size:$font-size-large;
+  line-height: 34px;
+}
+
 // Help region.
 .region-help {
   > .glyphicon {

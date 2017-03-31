@@ -7,17 +7,16 @@ $tablet:  "screen and (min-width: #{$screen-sm-min})";
 $normal:  "screen and (min-width: #{$screen-md-min})";
 $wide:    "screen and (min-width: #{$screen-lg-min})";
 
-
-
-.page-node-type-photo-set{
-	
+.page-node-type-homepage{
+	.field--name-body{
+		padding:70px 0;
+	}
     @media #{$tablet} {
    
     }
     @media #{$normal} {
    
     }
-  
 }
 
 
