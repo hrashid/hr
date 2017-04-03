@@ -40,7 +40,7 @@ body.user-logged-in.page-node-type-photo-set.navbar-is-fixed-top {
   	color:#FFF;
   	text-transform: lowercase;
   	text-shadow: 4px 4px 0px #000;
-    top:140px;
+    top:200px;
     text-align: center;
     width:100%;
     @media #{$tablet} {
@@ -53,8 +53,8 @@ body.user-logged-in.page-node-type-photo-set.navbar-is-fixed-top {
     }
   }
   .field--name-field-sub-title{
-  	top:130px;
-  	font-size:11px;
+  	top:250px;
+  	font-size:12px;
   	letter-spacing: 0.05em;
     text-shadow: 1px 1px 0 #000;
   	text-transform: uppercase;

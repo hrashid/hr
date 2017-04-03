@@ -6054,6 +6054,9 @@ body {
     body .navbar button {
       float: left;
       margin: 18px 20px 0 0; }
+      @media screen and (max-width: 767px) {
+        body .navbar button {
+          margin-left: 10px; } }
     body .navbar .navbar-brand {
       color: red;
       font-size: 22px;
@@ -6089,7 +6092,9 @@ body {
     body.toolbar-vertical.navbar-is-fixed-top header, body.toolbar-vertical.navbar-is-fixed-bottom header {
       z-index: 500; }
     body.toolbar-vertical.navbar-is-fixed-top header {
-      top: 39px; } }
+      top: 39px; }
+    body #block-zaki-account-menu {
+      display: none; } }
 
 @media screen and (min-width: 768px) {
   .navbar.container {
@@ -6350,7 +6355,7 @@ body.user-logged-in.page-node-type-photo-set.navbar-is-fixed-top .region-header 
   color: #FFF;
   text-transform: lowercase;
   text-shadow: 4px 4px 0px #000;
-  top: 140px;
+  top: 200px;
   text-align: center;
   width: 100%; }
   @media screen and (min-width: 768px) {
@@ -6369,8 +6374,8 @@ body.user-logged-in.page-node-type-photo-set.navbar-is-fixed-top .region-header 
       top: 400px; } }
 .page-node-type-homepage .field--name-field-sub-title,
 .page-node-type-photo-set .field--name-field-sub-title {
-  top: 130px;
-  font-size: 11px;
+  top: 250px;
+  font-size: 12px;
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 0 #000;
   text-transform: uppercase; }
